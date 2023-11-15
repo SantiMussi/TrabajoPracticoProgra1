@@ -7,7 +7,7 @@ def escribirArchivo():
     try:
         with open("NintendoData.csv", "wt", encoding='UTF-8') as archivo:
             lista_total = leerLineas("NintendoGames.csv", ",")
-            archivo.write(f"Juego; Calificacion Critico; Calificacion Usuario; Promedio\n")
+            archivo.write(f"Juego,Calificacion Critico,Calificacion Usuario,Promedio\n")
             
             for lista in lista_total:
                 # Verificamos si las calificaciones existen
