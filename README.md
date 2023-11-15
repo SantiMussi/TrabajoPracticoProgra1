@@ -4,7 +4,7 @@ CONTRASEÑA: CodingCorporation
 
 Especificación Técnica
         
-        Descripción General del Sistema
+Descripción General del Sistema
         
 El sistema implementa un programa en Python que permite filtrar ciertos datos provenientes de una base de datos anteriormente dada.
     - Se encarga de filtrar por Nombre de juego, calificación del crítico, calificación del jugador y el promedio de ambas.
@@ -13,14 +13,15 @@ El sistema implementa un programa en Python que permite filtrar ciertos datos pr
     - Para utilizar el programa en otro archivo lo único que se debe hacer en la línea 9 del código principal (Donde actualmente dice "NintendoGames.csv" y ","), 
       la ubicación del archivo en primer lugar y luego el separador de las columnas que se utiliza (llámese por default una coma)
 
-        Estructuras de Datos
+Estructuras de Datos
   
 Archivo NintendoGames.csv
 - Este archivo contiene información sobre los juegos de Nintendo, con columnas separadas por comas.
 Archivo NintendoData.csv
 - Este archivo es generado por el programa principal y contiene información procesada de los juegos, con columnas separadas por comas.
 
-        Técnicas y Herramientas
+Técnicas y Herramientas
+
 Manejo de Excepciones: 
   - Se utiliza el bloque try y except para manejar posibles errores de lectura y escritura de archivos.
 Manejo de Archivos:
