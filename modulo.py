@@ -1,4 +1,3 @@
-import math
 def leerLineas(ubicacion, separador):
     """La función se encarga de realizar una lectura de las líneas 
     y dividirlas con el separador indicado en los parámetros, además

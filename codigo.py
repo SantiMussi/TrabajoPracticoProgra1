@@ -1,6 +1,6 @@
 import math
 from modulo import *
-
+from validacion import *
 def escribirArchivo():
     """La función se encarga de, en un archivo aparte, escribir
     el título del juego, calificación del crítico, del usuario y además hacer un promedio"""
@@ -21,12 +21,16 @@ def escribirArchivo():
                 except ValueError:
                     pass
                 #Volcamos todo en el archivo nuevo
-                archivo.write(f"{lista[1]};{calificacion_critico};{calificacion_usuario};{promedio}\n")
+                archivo.write(f"{lista[1]},{calificacion_critico},{calificacion_usuario},{promedio}\n")
     except IOError:
         print("No se pudo abrir el archivo de escritura")
 
 def main():
-    escribirArchivo()
+    usuario = input("Ingrese el usuario: ")
+    contraseña = input("Ingrese la contraseña: ")
+    resultado = validacion(usuario, contraseña)
+    if resultado:
+        escribirArchivo()
 
 if __name__ == "__main__":
     main()
