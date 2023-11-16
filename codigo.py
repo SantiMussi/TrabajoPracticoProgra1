@@ -1,6 +1,6 @@
 import math
 from modulo import *
-from validacion import *
+from validacion_Coding_Ninja import *
 def escribirArchivo():
     """La función se encarga de, en un archivo aparte, escribir
     el título del juego, calificación del crítico, del usuario y además hacer un promedio"""
