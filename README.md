@@ -1,6 +1,8 @@
 USUARIO: InnovaCode
 CONTRASEÑA: CodingCorporation
 
+USUARIO DEL OTRO EQUIPO (actual): Coding_Ninja
+CONTRASEÑA DEL OTRO EQUIPO (actual): Minecraft123
 
 Especificación Técnica
         
