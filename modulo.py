@@ -5,7 +5,7 @@ def leerLineas(ubicacion, separador):
     reutilizable"""
     try: 
         lista_total = []
-        # Abrimos el archivo en modo lectura
+        #Nos encargamos de abrir y cerrar el archivo con el operador with
         with open(ubicacion, 'rt', encoding='UTF-8') as archivo:
             next(archivo)
             #Chequeamos si las columnas que contienen "" tienen comas adentro para que no se corrompa el codigo
