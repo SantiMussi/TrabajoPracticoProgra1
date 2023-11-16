@@ -5,6 +5,7 @@ def escribirArchivo():
     """La función se encarga de, en un archivo aparte, escribir
     el título del juego, calificación del crítico, del usuario y además hacer un promedio"""
     try:
+        #Nos encargamos de abrir y cerrar el archivo con el operador with
         with open("NintendoData.csv", "wt", encoding='UTF-8') as archivo:
             lista_total = leerLineas("NintendoGames.csv", ",")
             archivo.write(f"Juego,Calificacion Critico,Calificacion Usuario,Promedio\n")
